@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="black">
+        <a-camera position="0 8 100"></a-camera>
+        <a-assets>      
+            <a-asset-item id="train-obj" src="./model/tinker.obj"></a-asset-item>
+            <a-asset-item id="train-mtl" src="./model/obj.mtl"></a-asset-item>
+            <as-asset-item id="background" src="./Desert Clean.png"></as-asset-item>
+          </a-assets>
+        <a-entity>
+            <a-entity obj-model="obj:#train-obj; mtl:#train-mtl" position="0 -3 -5" rotation="270 0 0"></a-entity>
+        </a-entity>
+
+        <a-box position="0.076 35 -39" width="400" height="200" src="#background"></a-box>
+    </a-scene>
+</body>
+
+</html>
